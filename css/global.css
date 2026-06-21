@@ -241,3 +241,53 @@ a {
     flex-direction: column;
   }
 }
+
+@media (max-width: 700px) {
+  .nav {
+    top: 16px;
+    width: calc(100% - 28px);
+    height: 72px;
+    padding: 0 14px;
+    border-radius: 999px;
+  }
+
+  .nav nav {
+    display: none;
+  }
+
+  .logo {
+    gap: 8px;
+    font-size: 1.25rem;
+    letter-spacing: -0.04em;
+  }
+
+  .logo img {
+    height: 42px;
+  }
+
+  .nav-btn {
+    padding: 13px 18px;
+    font-size: 0.9rem;
+    white-space: nowrap;
+  }
+}
+
+@media (max-width: 430px) {
+  .logo {
+    font-size: 1.05rem;
+  }
+
+  .logo img {
+    height: 38px;
+  }
+
+  .nav-btn {
+    padding: 12px 15px;
+    font-size: 0.82rem;
+  }
+}
+
+.logo span,
+.brand-text {
+  white-space: nowrap;
+}
