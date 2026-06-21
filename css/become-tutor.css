@@ -320,3 +320,29 @@
         padding: 42px 28px;
     }
 }
+
+@media (max-width: 700px) {
+    .tutor-hero {
+        min-height: auto;
+        padding: 150px 7vw 80px;
+        display: block;
+        overflow: hidden;
+    }
+
+    .tutor-hero h1 {
+        font-size: clamp(3.8rem, 15vw, 5rem);
+        line-height: 0.9;
+        letter-spacing: -0.08em;
+        max-width: 100%;
+    }
+
+    .tutor-hero-text p:not(.eyebrow) {
+        max-width: 100%;
+        font-size: 1.25rem;
+    }
+
+    .tutor-hero-panel {
+        margin-top: 70px;
+        min-height: auto;
+    }
+}
