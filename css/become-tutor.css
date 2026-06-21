@@ -421,3 +421,11 @@
         overflow: hidden;
     }
 }
+
+@media (max-width: 700px) {
+    .mini-stat.highlight span {
+        font-size: clamp(2.4rem, 12vw, 3.5rem);
+        line-height: 0.9;
+        letter-spacing: -0.05em;
+    }
+}
