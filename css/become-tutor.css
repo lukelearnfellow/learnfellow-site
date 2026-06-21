@@ -1,0 +1,322 @@
+.tutor-hero {
+    min-height: 92vh;
+    padding: 170px 7vw 90px;
+    display: grid;
+    grid-template-columns: 1fr 0.75fr;
+    gap: 80px;
+    align-items: center;
+    background:
+        radial-gradient(circle at 75% 25%, rgba(37,99,235,.18), transparent 35%),
+        linear-gradient(180deg, #ffffff, #f7f9fc);
+}
+
+.tutor-hero h1 {
+    font-size: clamp(4rem, 7vw, 7rem);
+    line-height: 0.9;
+    letter-spacing: -0.08em;
+    max-width: 950px;
+}
+
+.tutor-hero-text p:not(.eyebrow) {
+    max-width: 720px;
+    margin: 30px 0 34px;
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #475569;
+}
+
+.tutor-hero-panel {
+    min-height: 520px;
+    padding: 28px;
+    border-radius: 48px;
+    background:
+        radial-gradient(circle at 35% 20%, rgba(37,99,235,.28), transparent 35%),
+        linear-gradient(145deg, rgba(255,255,255,.9), rgba(255,255,255,.4));
+    box-shadow:
+        inset 0 0 0 1px rgba(255,255,255,.75),
+        0 40px 100px rgba(15,23,42,.12);
+    display: grid;
+    gap: 18px;
+}
+
+.mini-stat {
+    padding: 30px;
+    border-radius: 32px;
+    background: rgba(255,255,255,.78);
+    backdrop-filter: blur(18px);
+    box-shadow: 0 18px 50px rgba(15,23,42,.07);
+}
+
+.mini-stat span {
+    display: block;
+    color: #2563eb;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.mini-stat p {
+    color: #475569;
+    line-height: 1.6;
+}
+
+.mini-stat.highlight {
+    background: #020817;
+    color: white;
+}
+
+.mini-stat.highlight span {
+    font-size: 4rem;
+    line-height: 1;
+    color: #93c5fd;
+}
+
+.mini-stat.highlight p {
+    color: #cbd5e1;
+}
+
+.why-tutor-section {
+    width: min(1400px, calc(100% - 32px));
+    margin: 110px auto;
+}
+
+.why-heading {
+    width: min(1120px, 100%);
+    margin: 0 auto 44px;
+}
+
+.why-heading h2 {
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: .95;
+    letter-spacing: -.07em;
+    max-width: 1100px;
+}
+
+.why-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+}
+
+.why-card {
+    min-height: 340px;
+    padding: 38px;
+    border-radius: 36px;
+    background: white;
+    box-shadow: 0 24px 70px rgba(15,23,42,.06);
+}
+
+.why-card span {
+    display: block;
+    color: #2563eb;
+    font-weight: 900;
+    margin-bottom: 80px;
+}
+
+.why-card h3 {
+    font-size: 1.4rem;
+    margin-bottom: 14px;
+}
+
+.why-card p {
+    color: #64748b;
+    line-height: 1.7;
+}
+
+.tutor-process-section {
+    width: min(1120px, calc(100% - 32px));
+    margin: 120px auto;
+    padding: 70px;
+    border-radius: 42px;
+    background: #020817;
+    color: white;
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    gap: 70px;
+}
+
+.process-left h2 {
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: .95;
+    letter-spacing: -.07em;
+    margin-bottom: 24px;
+}
+
+.process-left p:not(.eyebrow) {
+    color: #94a3b8;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.process-list {
+    display: grid;
+    gap: 18px;
+}
+
+.process-item {
+    display: grid;
+    grid-template-columns: 70px 1fr;
+    gap: 24px;
+    padding: 28px;
+    border-radius: 28px;
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.1);
+}
+
+.process-item span {
+    color: #93c5fd;
+    font-weight: 900;
+}
+
+.process-item h3 {
+    margin-bottom: 8px;
+}
+
+.process-item p {
+    color: #cbd5e1;
+    line-height: 1.7;
+}
+
+.earn-section {
+    width: min(1120px, calc(100% - 32px));
+    margin: 120px auto;
+    display: grid;
+    grid-template-columns: 1fr 430px;
+    gap: 60px;
+    align-items: center;
+}
+
+.earn-section h2 {
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: .95;
+    letter-spacing: -.07em;
+    max-width: 800px;
+}
+
+.earn-card {
+    padding: 44px;
+    border-radius: 38px;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(37,99,235,.2), transparent 35%),
+        white;
+    box-shadow: 0 24px 70px rgba(15,23,42,.06);
+}
+
+.earn-number {
+    font-size: 6rem;
+    line-height: .9;
+    letter-spacing: -.08em;
+    font-weight: 900;
+    color: #2563eb;
+}
+
+.earn-label {
+    margin-top: 16px;
+    font-weight: 800;
+    color: #06142e;
+}
+
+.earn-note {
+    margin-top: 22px;
+    color: #64748b;
+    line-height: 1.7;
+}
+
+.requirements-section {
+    width: min(1120px, calc(100% - 32px));
+    margin: 120px auto;
+}
+
+.requirements-heading h2 {
+    font-size: clamp(3rem, 5vw, 5rem);
+    line-height: .95;
+    letter-spacing: -.07em;
+    max-width: 1100px;
+    margin-bottom: 44px;
+}
+
+.requirements-list {
+    display: grid;
+    gap: 16px;
+}
+
+.requirement-item {
+    border-radius: 28px;
+    background: white;
+    box-shadow: 0 20px 60px rgba(15,23,42,.06);
+    overflow: hidden;
+}
+
+.requirement-item summary {
+    cursor: pointer;
+    padding: 28px 32px;
+    font-weight: 900;
+    font-size: 1.15rem;
+    list-style: none;
+}
+
+.requirement-item summary::-webkit-details-marker {
+    display: none;
+}
+
+.requirement-item summary::after {
+    content: "+";
+    float: right;
+    color: #2563eb;
+    font-size: 1.5rem;
+}
+
+.requirement-item[open] summary::after {
+    content: "–";
+}
+
+.requirement-item p {
+    padding: 0 32px 30px;
+    color: #64748b;
+    line-height: 1.8;
+    max-width: 850px;
+}
+
+.tutor-cta {
+    width: min(1120px, calc(100% - 32px));
+    margin: 80px auto 90px;
+    padding: 76px;
+    border-radius: 42px;
+    background:
+        radial-gradient(circle at 20% 20%, rgba(147,197,253,.5), transparent 35%),
+        linear-gradient(135deg, #071225, #143c88);
+    color: white;
+}
+
+.tutor-cta h2 {
+    font-size: clamp(2.5rem, 5vw, 4.8rem);
+    line-height: .95;
+    letter-spacing: -.07em;
+    max-width: 800px;
+}
+
+.tutor-cta p {
+    color: #cbd5e1;
+    margin: 20px 0 34px;
+}
+
+@media (max-width: 900px) {
+    .tutor-hero,
+    .tutor-process-section,
+    .earn-section,
+    .why-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .tutor-hero {
+        padding-top: 140px;
+    }
+
+    .tutor-hero-panel {
+        min-height: auto;
+    }
+
+    .tutor-process-section,
+    .tutor-cta {
+        padding: 42px 28px;
+    }
+}
