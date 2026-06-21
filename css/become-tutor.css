@@ -393,3 +393,31 @@
         font-size: 3.2rem;
     }
 }
+
+@media (max-width: 700px) {
+    .tutor-hero-panel {
+        width: 100%;
+        max-width: 100%;
+        padding: 18px;
+        box-sizing: border-box;
+        overflow: hidden;
+    }
+
+    .mini-stat {
+        width: 100%;
+        max-width: 100%;
+        box-sizing: border-box;
+        padding: 24px;
+        border-radius: 26px;
+    }
+
+    .mini-stat.highlight span {
+        font-size: clamp(3rem, 17vw, 4.5rem);
+        line-height: 0.9;
+        word-break: break-word;
+    }
+
+    .mini-stat.highlight {
+        overflow: hidden;
+    }
+}
