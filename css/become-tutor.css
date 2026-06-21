@@ -249,7 +249,7 @@
 .requirement-item summary {
     cursor: pointer;
     padding: 28px 32px;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 1.15rem;
     list-style: none;
 }
