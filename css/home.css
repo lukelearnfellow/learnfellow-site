@@ -672,39 +672,64 @@
 
 .menu-toggle {
     display: none;
-    background: none;
     border: none;
-    font-size: 1.8rem;
-    color: #09142d;
+    background: transparent;
+    color: #0f172a;
+    font-size: 1.6rem;
+    font-weight: 900;
     cursor: pointer;
 }
 
-@media (max-width: 900px) {
-    .menu-toggle {
-        display: block;
+@media (max-width: 700px) {
+    .nav {
+        top: 16px;
+        width: calc(100% - 28px);
+        height: 72px;
+        padding: 0 14px;
+        border-radius: 999px;
+        gap: 10px;
+    }
+
+    .logo {
+        gap: 8px;
+        font-size: 1.05rem;
+        letter-spacing: -0.04em;
+        white-space: nowrap;
+        margin-right: auto;
+    }
+
+    .logo img {
+        height: 38px;
     }
 
     .nav nav {
         position: absolute;
-        top: 85px;
+        top: 82px;
         left: 0;
         width: 100%;
-
-        background: rgba(255,255,255,.95);
-        backdrop-filter: blur(20px);
-
-        border-radius: 24px;
-
-        padding: 24px;
-
         display: none;
         flex-direction: column;
         gap: 18px;
-
-        box-shadow: 0 20px 40px rgba(0,0,0,.08);
+        padding: 24px;
+        border-radius: 28px;
+        background: rgba(255,255,255,.96);
+        backdrop-filter: blur(20px);
+        box-shadow: 0 24px 60px rgba(15,23,42,.12);
     }
 
     .nav nav.active {
         display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        order: 2;
+    }
+
+    .nav-btn {
+        order: 3;
+        padding: 12px 15px;
+        font-size: 0.82rem;
+        white-space: nowrap;
     }
 }
