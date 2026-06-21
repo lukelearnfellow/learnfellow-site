@@ -50,7 +50,7 @@
 .mini-stat span {
     display: block;
     color: #2563eb;
-    font-weight: 900;
+    font-weight: 700;
     margin-bottom: 12px;
 }
 
@@ -65,7 +65,7 @@
 }
 
 .mini-stat.highlight span {
-    font-size: 4rem;
+    font-size: 3rem;
     line-height: 1;
     color: #93c5fd;
 }
