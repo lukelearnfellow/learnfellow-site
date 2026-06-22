@@ -51,7 +51,8 @@ const tutorData = {
         bio: "Luke is passionate about helping students build confidence in challenging subjects by breaking concepts into clear, manageable steps. He works patiently with students in math, English, history, and standardized test preparation, creating a supportive environment where questions are always encouraged. Luke strives to help each student improve both academically and in their confidence as learners.",
         courses: "Algebra I, Algebra II, Geometry, English 9, English 10, AP Human Geography, AP US History, SAT Math, SAT English, ACT Math, ACT English",
         bestFor: "Any of the subjects listed.",
-        payment: "https://buy.stripe.com/dRm4gycIJgJc5fMcbM1B601"
+        payment: "https://buy.stripe.com/dRm4gycIJgJc5fMcbM1B601",
+        consultation: "https://calendly.com/lukearapaka/30min"
     },
     lukem: {
         initials: "LM",
@@ -64,7 +65,8 @@ const tutorData = {
         bio: "Luke enjoys helping students understand math, science, and Spanish by connecting classroom concepts to real-world examples and practical applications. He is patient, encouraging, and committed to helping students overcome difficult topics at their own pace. His goal is to make learning approachable and help students develop lasting confidence.",
         courses: "Algebra I, Algebra II, Biology, Spanish I, Spanish II, Middle School Classes",
         bestFor: "Any of the subjects listed.s",
-        payment: "https://buy.stripe.com/dRm00ifUV78CgYu4Jk1B602"
+        payment: "https://buy.stripe.com/dRm00ifUV78CgYu4Jk1B602",
+        consultation: ""
     },
     sophia: {
         initials: "SR",
@@ -77,7 +79,8 @@ const tutorData = {
         bio: "Sophia works closely with students to strengthen their writing, reading, grammar, and language skills while building confidence in the classroom. She enjoys helping students organize their thoughts, improve communication skills, and succeed in English and Spanish courses. Sophia creates a supportive learning environment where every student feels comfortable asking questions and growing academically.",
         courses: "English 9, English 10, Grammary, Writing, Proofreading Essays, Global Studies, Modern American History, Spanish I, Spanish II, Spanish III, Bible 9, Bible 10",
         bestFor: "Any of the subjects listed.",
-        payment: "https://buy.stripe.com/dRmaEW9wx8cG6jQb7I1B603"
+        payment: "https://buy.stripe.com/dRmaEW9wx8cG6jQb7I1B603",
+        consultation: ""
     },
     kendra: {
         initials: "KH",
@@ -90,7 +93,8 @@ const tutorData = {
         bio: "Kendra enjoys helping students succeed in Latin, mathematics, history, and the humanities by making complex ideas easier to understand. She is patient, encouraging, and works with students to develop strong study habits and critical thinking skills. Kendra is dedicated to helping each student gain confidence and achieve their academic goals.",
         courses: "Latin I, Latin II, Latin III, Pre-Algebra, Geometry, Global Studies, APUSH, Biology, English 9, English 10, Bible 9, Bible 10, Bible 11, Humanities, Logic, Ombnibus",
         bestFor: "Any of the subjects listed.",
-        payment: "https://buy.stripe.com/bJe28qeQR8cG9w27Vw1B604"
+        payment: "https://buy.stripe.com/bJe28qeQR8cG9w27Vw1B604",
+        consultation: ""
     },
     will: {
         initials: "WH",
@@ -103,7 +107,8 @@ const tutorData = {
         bio: "Will helps students strengthen their understanding of math, science, English, and Spanish through clear explanations and personalized support. He believes every student can succeed with the right guidance and works to create a positive and encouraging learning environment. Will enjoys helping students gain confidence while improving their academic skills.",
         courses: "Algebra I, Algebra II, Geometry, Chemistry, Bioogy, English 9, English 10, Spanish I, Spanish II",
         bestFor: "Any of the subjects listed.",
-        payment: "https://buy.stripe.com/fZu4gy8st2SmfUqdfQ1B605"
+        payment: "https://buy.stripe.com/fZu4gy8st2SmfUqdfQ1B605",
+        consultation: ""
     }
 };
 
@@ -117,7 +122,21 @@ if (tutorSearch) {
         let visibleCards = 0;
 
         tutorCards.forEach((card) => {
-            const searchableText = `${card.dataset.name} ${card.dataset.subjects}`.toLowerCase();
+            const tutorKey = card.dataset.tutor;
+            const tutor = tutorData[tutorKey];
+
+            if (!tutor) {
+                card.style.display = "none";
+                return;
+            }
+
+            const searchableText = `
+                ${tutor.name}
+                ${tutor.subjects}
+                ${tutor.courses}
+                ${tutor.bestFor}
+                ${tutor.bio}
+            `.toLowerCase();
 
             if (searchableText.includes(searchValue)) {
                 card.style.display = "block";
@@ -129,7 +148,7 @@ if (tutorSearch) {
 
         if (noResults) {
             noResults.style.display = visibleCards === 0 ? "block" : "none";
-        }ß
+        }
     });
 }
 
@@ -159,6 +178,7 @@ function openTutorModal(tutorKey) {
     document.getElementById("modalCourses").textContent = tutor.courses;
     document.getElementById("modalBestFor").textContent = tutor.bestFor;
     document.getElementById("payTutorButton").href = tutor.payment;
+    document.getElementById("bookConsultationButton").href = tutor.consultation;
 
     modalOverlay.classList.add("active");
     document.body.style.overflow = "hidden";
@@ -202,4 +222,8 @@ if (menuToggle && mobileNav) {
     menuToggle.addEventListener("click", function () {
         mobileNav.classList.toggle("active");
     });
+}
+
+if (bookConsultationButton && tutor.consultation) {
+    bookConsultationButton.href = tutor.consultation;
 }

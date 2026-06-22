@@ -8,6 +8,7 @@
 
     <link rel="stylesheet" href="../css/global.css">
     <link rel="stylesheet" href="../css/find-tutor.css">
+    <link rel="icon" href="../assets/brain.png">
 </head>
 
 <body>
@@ -44,7 +45,7 @@
 
     <section class="tutor-directory">
 
-        <div class="tutor-card" data-name="Luke R." data-subjects="algebra geometry calculus sat math precalculus">
+        <div class="tutor-card" data-tutor="luke" data-subjects="algebra geometry calculus sat math precalculus">
             <div class="profile-circle">
                 <img src="../assets/luke.png" alt="Luke R.">
             </div>
@@ -67,7 +68,7 @@
             <button class="open-modal" data-tutor="luke">View Profile</button>
         </div>
 
-        <div class="tutor-card" data-name="Luke M." data-subjects="chemistry physics biology science algebra">
+        <div class="tutor-card" data-tutor="lukem" data-subjects="chemistry physics biology science algebra">
             <div class="profile-circle">
                 <img src="../assets/lukem.png" alt="Luke M.">
             </div>
@@ -89,7 +90,7 @@
             <button class="open-modal" data-tutor="lukem">View Profile</button>
         </div>
 
-        <div class="tutor-card" data-name="Sophia R."
+        <div class="tutor-card" data-tutor="sophia"
             data-subjects="english writing act reading essay grammar literature">
             <div class="profile-circle">
                 <img src="../assets/sophia.png" alt="Sophia R.">
@@ -115,7 +116,7 @@
             <button class="open-modal" data-tutor="sophia">View Profile</button>
         </div>
 
-        <div class="tutor-card" data-name="Kendra H." data-subjects="computer science coding python java math">
+        <div class="tutor-card" data-tutor="kendra" data-subjects="computer science coding python java math">
             <div class="profile-circle">
                 <img src="../assets/kendra.png" alt="Kendra H.">
             </div>
@@ -138,7 +139,7 @@
             <button class="open-modal" data-tutor="kendra">View Profile</button>
         </div>
 
-        <div class="tutor-card" data-name="Will H." data-subjects="spanish history social studies english biology">
+        <div class="tutor-card" data-tutor="will" data-subjects="spanish history social studies english biology">
             <div class="profile-circle">
                 <img src="../assets/will.png" alt="Will H.">
             </div>
@@ -281,7 +282,9 @@
             </div>
 
             <div class="modal-actions">
-                <a href="contact.html" class="primary">Book a Consultation</a>
+                <a href="#" class="primary" id="bookConsultationButton" target="_blank">
+                    Book a Consultation
+                </a>
                 <a href="#" class="pay-button" id="payTutorButton">
                     Pay This Tutor
                 </a>
