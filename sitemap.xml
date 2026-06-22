@@ -3,27 +3,26 @@
 
   <url>
     <loc>https://learnfellow.com/</loc>
-    <priority>1.0</priority>
   </url>
 
   <url>
-    <loc>https://learnfellow.com/about.html</loc>
-    <priority>0.8</priority>
+    <loc>https://learnfellow.com/pages/index.html</loc>
   </url>
 
   <url>
-    <loc>https://learnfellow.com/find-tutor.html</loc>
-    <priority>0.9</priority>
+    <loc>https://learnfellow.com/pages/about.html</loc>
   </url>
 
   <url>
-    <loc>https://learnfellow.com/contact.html</loc>
-    <priority>0.8</priority>
+    <loc>https://learnfellow.com/pages/find-tutor.html</loc>
   </url>
 
   <url>
-    <loc>https://learnfellow.com/become-a-tutor.html</loc>
-    <priority>0.8</priority>
+    <loc>https://learnfellow.com/pages/contact.html</loc>
+  </url>
+
+  <url>
+    <loc>https://learnfellow.com/pages/become-a-tutor.html</loc>
   </url>
 
 </urlset>
