@@ -224,6 +224,44 @@ if (menuToggle && mobileNav) {
     });
 }
 
-if (bookConsultationButton && tutor.consultation) {
-    bookConsultationButton.href = tutor.consultation;
+const newsletterForm = document.getElementById("newsletterForm");
+const newsletterStatus = document.getElementById("newsletterStatus");
+
+if (newsletterForm) {
+    newsletterForm.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        newsletterStatus.textContent = "Subscribing...";
+
+        const email =
+            document.getElementById("newsletterEmail").value;
+
+        const source =
+            window.location.pathname.includes("resources")
+            ? "Resources"
+            : "Homepage";
+
+        const formData = new FormData();
+        formData.append("email", email);
+        formData.append("source", source);
+
+        try {
+            await fetch(
+                "https://script.google.com/macros/s/AKfycbwkwCxMV5SBYxiGTClnzlI70zeF7O0VvKpI6C6s6jCMy-gkzjatZdu_2qdIYNDdOttQNg/exec",
+                {
+                    method: "POST",
+                    body: formData
+                }
+            );
+
+            newsletterStatus.textContent =
+                "Thanks for subscribing!";
+
+            newsletterForm.reset();
+        }
+        catch {
+            newsletterStatus.textContent =
+                "Something went wrong. Please try again.";
+        }
+    });
 }
