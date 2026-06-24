@@ -66,7 +66,7 @@ const tutorData = {
         courses: "Algebra I, Algebra II, Biology, Spanish I, Spanish II, Middle School Classes",
         bestFor: "Any of the subjects listed.s",
         payment: "https://buy.stripe.com/dRm00ifUV78CgYu4Jk1B602",
-        consultation: "https://calendly.com/sophiaraymond177/30min"
+        consultation: ""
     },
     sophia: {
         initials: "SR",
@@ -80,7 +80,7 @@ const tutorData = {
         courses: "English 9, English 10, Grammary, Writing, Proofreading Essays, Global Studies, Modern American History, Spanish I, Spanish II, Spanish III, Bible 9, Bible 10",
         bestFor: "Any of the subjects listed.",
         payment: "https://buy.stripe.com/dRmaEW9wx8cG6jQb7I1B603",
-        consultation: ""
+        consultation: "https://calendly.com/sophiaraymond177/30min"
     },
     kendra: {
         initials: "KH",
