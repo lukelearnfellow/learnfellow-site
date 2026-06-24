@@ -49,7 +49,7 @@ const tutorData = {
         rating: "★ 5",
         rate: "$25/hr",
         bio: "Luke is passionate about helping students build confidence in challenging subjects by breaking concepts into clear, manageable steps. He works patiently with students in math, English, history, and standardized test preparation, creating a supportive environment where questions are always encouraged. Luke strives to help each student improve both academically and in their confidence as learners.",
-        courses: "Algebra I, Algebra II, Geometry, English 9, English 10, AP Human Geography, AP US History, SAT Math, SAT English, ACT Math, ACT English",
+        courses: "Algebra I, Algebra II, Geometry, English 9, English 10, AP Human Geography, AP US History, SAT Math, SAT English, ACT Math, ACT English, AP Macroeconomics",
         bestFor: "Any of the subjects listed.",
         payment: "https://buy.stripe.com/dRm4gycIJgJc5fMcbM1B601",
         consultation: "https://calendly.com/lukearapaka/30min"
@@ -77,7 +77,7 @@ const tutorData = {
         rating: "★ 5",
         rate: "$20/hr",
         bio: "Sophia works closely with students to strengthen their writing, reading, grammar, and language skills while building confidence in the classroom. She enjoys helping students organize their thoughts, improve communication skills, and succeed in English and Spanish courses. Sophia creates a supportive learning environment where every student feels comfortable asking questions and growing academically.",
-        courses: "English 9, English 10, Grammary, Writing, Proofreading Essays, Global Studies, Modern American History, Spanish I, Spanish II, Spanish III, Bible 9, Bible 10",
+        courses: "English 9, English 10, Grammary, Writing, Proofreading Essays, Global Studies, Modern American History, AP United States History, Spanish I, Spanish II, Spanish III, Bible 9, Bible 10, AP Macroeconomics",
         bestFor: "Any of the subjects listed.",
         payment: "https://buy.stripe.com/dRmaEW9wx8cG6jQb7I1B603",
         consultation: "https://calendly.com/sophiaraymond177/30min"
