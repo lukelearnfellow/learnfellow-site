@@ -66,7 +66,7 @@ const tutorData = {
         courses: "Algebra I, Algebra II, Biology, Spanish I, Spanish II, Middle School Classes",
         bestFor: "Any of the subjects listed.s",
         payment: "https://buy.stripe.com/dRm00ifUV78CgYu4Jk1B602",
-        consultation: ""
+        consultation: "https://calendly.com/sophiaraymond177/30min?month=2026-06"
     },
     sophia: {
         initials: "SR",
