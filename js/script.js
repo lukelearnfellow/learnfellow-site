@@ -66,7 +66,7 @@ const tutorData = {
         courses: "Algebra I, Algebra II, Biology, Spanish I, Spanish II, Middle School Classes",
         bestFor: "Any of the subjects listed.s",
         payment: "https://buy.stripe.com/dRm00ifUV78CgYu4Jk1B602",
-        consultation: ""
+        consultation: "https://docs.google.com/forms/d/e/1FAIpQLSfqFTIq2Xkd1Xt_dTiunuMAMsxOAfmasqGdtd57C-IyMyJmRg/viewform?usp=sharing&ouid=110394719010209245866"
     },
     sophia: {
         initials: "SR",
@@ -94,7 +94,7 @@ const tutorData = {
         courses: "Latin I, Latin II, Latin III, Pre-Algebra, Geometry, Global Studies, APUSH, Biology, English 9, English 10, Bible 9, Bible 10, Bible 11, Humanities, Logic, Ombnibus",
         bestFor: "Any of the subjects listed.",
         payment: "https://buy.stripe.com/bJe28qeQR8cG9w27Vw1B604",
-        consultation: ""
+        consultation: "https://docs.google.com/forms/d/e/1FAIpQLSfqFTIq2Xkd1Xt_dTiunuMAMsxOAfmasqGdtd57C-IyMyJmRg/viewform?usp=sharing&ouid=110394719010209245866"
     },
     will: {
         initials: "WH",
@@ -108,7 +108,7 @@ const tutorData = {
         courses: "Algebra I, Algebra II, Geometry, Chemistry, Bioogy, English 9, English 10, Spanish I, Spanish II",
         bestFor: "Any of the subjects listed.",
         payment: "https://buy.stripe.com/fZu4gy8st2SmfUqdfQ1B605",
-        consultation: ""
+        consultation: "https://docs.google.com/forms/d/e/1FAIpQLSfqFTIq2Xkd1Xt_dTiunuMAMsxOAfmasqGdtd57C-IyMyJmRg/viewform?usp=sharing&ouid=110394719010209245866"
     }
 };
 
